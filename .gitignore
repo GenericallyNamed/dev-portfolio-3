@@ -1,0 +1,17 @@
+# Flask/Python project components
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.pyi
+*.egg-info/
+env/
+dist/
+build/
+*.egg
+*.whl
+
+# React and JavaScript project components
+node_modules/

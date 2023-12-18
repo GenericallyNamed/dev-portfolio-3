@@ -1,0 +1,13 @@
+#!/bin/bash
+# activate virtual environment and install dependencies for server
+# authors: EECS 485 Staff
+
+set -Eeuo pipefail
+set -x
+
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+pip install -e .
+# disabling until we set up an app package for react
+# npm ci .

@@ -1,0 +1,14 @@
+#!/bin/bash
+# run the web server
+# authors: EECS 485 Staff
+
+# Stop on errors
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+
+# build react app
+# disabled for now
+# npx webpack --watch &
+
+# run web server
+flask --app portfolio --debug run --host 0.0.0.0 --port 8000
