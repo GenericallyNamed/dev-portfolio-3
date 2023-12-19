@@ -1,7 +1,50 @@
 #!/bin/sh
 
+# this script performs all vital tasks for building, including:
+# - installing dependencies
+# - rendering jinja2 templates
+# - compiling tailwind from HTML
+
+# output directory will be "build" - github pages will also be configured to use
+
+SRC = src/
+
+# this directory as the root of the website
 OUT = build/
 
-
+# stop on errors
+set -Eeuo pipefail
 
 # activate virtual environment and install dependencies for server
+python3 -m venv env
+source env/bin/activate
+
+# install dependencies
+pip install -r requirements.txt
+
+# remove old build & create new directory
+# check if $OUT exists
+if [ -d "$OUT" ]; then
+    # remove $OUT
+    rm -rf $OUT
+fi
+mkdir $OUT
+
+# render jinja2 templates
+python3 $SRC/build_html.py
+
+# compile tailwind
+npx tailwindcss-cli@latest build $SRC/css/tailwind.css -o $OUT/css/tailwind.css
+
+# copy css
+cp $SRC/css/* $OUT/css/
+
+# copy js
+cp $SRC/js/* $OUT/js/
+
+# copy images
+cp $SRC/images/* $OUT/images/
+
+# copy documents
+cp $SRC/documents/* $OUT/documents/
+
