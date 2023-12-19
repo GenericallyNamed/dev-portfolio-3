@@ -9,6 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v4.0.1
+      - name: Install Python
+        uses: actions/setup-python@v5.0.0
+      - name: Setup dependencies
+        run: 
+          bin/install
+      - name: Build site
+        run: 
+          bin/build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:

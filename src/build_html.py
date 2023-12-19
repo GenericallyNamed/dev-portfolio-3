@@ -7,12 +7,14 @@ from get_data import get_index
 
 TEMPLATES = Path('./src/templates')
 BUILD = Path('./build')
+print(Path(".").absolute())
+print(TEMPLATES)
 
 
 def render_template(template, output, **kwargs):
     """Renders a template file with the given arguments."""
-    env = Environment(loader=FileSystemLoader(template))
-    template = env.get_template(template)
+    env = Environment(loader=FileSystemLoader(TEMPLATES))
+    template = env.get_template(str(template.relative_to(TEMPLATES)))
     with open(output, 'w', encoding='utf-8') as f:
         f.write(template.render(**kwargs))
 

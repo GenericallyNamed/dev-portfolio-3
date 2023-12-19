@@ -7,20 +7,20 @@
 
 # output directory will be "build" - github pages will also be configured to use
 
-SRC = src/
+SRC=src
 
 # this directory as the root of the website
-OUT = build/
+OUT=build
 
 # stop on errors
 set -Eeuo pipefail
 
 # activate virtual environment and install dependencies for server
-python3 -m venv env
+# if env doesn't exist, create it
+if [ ! -d "env" ]; then
+    python3 -m venv env
+fi
 source env/bin/activate
-
-# install dependencies
-pip install -r requirements.txt
 
 # remove old build & create new directory
 # check if $OUT exists
@@ -37,14 +37,17 @@ python3 $SRC/build_html.py
 npx tailwindcss-cli@latest build $SRC/css/tailwind.css -o $OUT/css/tailwind.css
 
 # copy css
+mkdir -p $OUT/css
 cp $SRC/css/* $OUT/css/
 
 # copy js
+mkdir -p $OUT/js
 cp $SRC/js/* $OUT/js/
 
 # copy images
+mkdir -p $OUT/images
 cp $SRC/images/* $OUT/images/
 
 # copy documents
+mkdir -p $OUT/documents
 cp $SRC/documents/* $OUT/documents/
-
