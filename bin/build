@@ -1,0 +1,7 @@
+#!/bin/sh
+
+OUT = build/
+
+
+
+# activate virtual environment and install dependencies for server
