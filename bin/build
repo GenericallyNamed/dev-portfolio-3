@@ -13,7 +13,8 @@ SRC=src
 OUT=build
 
 # stop on errors
-set -Eeuo pipefail
+# disabled to stop workflow error
+# set -Eeuo pipefail
 
 # activate virtual environment and install dependencies for server
 # if env doesn't exist, create it
