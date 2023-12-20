@@ -13,13 +13,19 @@ body {
 section {
     margin: 0 auto;
     max-width: 800px;
-    padding: 0 1rem;
+    padding: 10px 1rem;
+}
+
+pre {
+    line-height:1em;
 }
 
 
 /* class definitions */
-.special_border {
-    border: 5px solid pink;
+.special-border {
+    border: 5px outset #ff002d;
+    outline: 5px solid greenyellow;
+    box-shadow: blue 0px 0px 0px 10px;
     border-radius: 5px;
     padding: 1rem;
 }

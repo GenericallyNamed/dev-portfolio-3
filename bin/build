@@ -35,7 +35,8 @@ mkdir $OUT
 python3 $SRC/build_html.py
 
 # compile tailwind
-npx tailwindcss-cli@latest build $SRC/css/tailwind.css -o $OUT/css/tailwind.css
+npx tailwindcss -i $SRC/css/input.css -o $SRC/css/tailwind.css
+# npx tailwindcss-cli@latest build -i $SRC/css/tailwind.css -o $OUT/css/tailwind.css
 
 # copy css
 mkdir -p $OUT/css
@@ -46,9 +47,15 @@ mkdir -p $OUT/js
 cp $SRC/js/* $OUT/js/
 
 # copy images
-mkdir -p $OUT/images
-cp $SRC/images/* $OUT/images/
+if [ -d "$SRC/images" ] && [ -n "$(ls -A $SRC/images)" ]; then
+    # copy images
+    mkdir -p $OUT/images
+    cp $SRC/images/* $OUT/images/
+fi
 
 # copy documents
-mkdir -p $OUT/documents
-cp $SRC/documents/* $OUT/documents/
+if [ -d "$SRC/documents" ] && [ -n "$(ls -A $SRC/documents)" ]; then
+    # copy images
+    mkdir -p $OUT/documents
+    cp $SRC/documents/* $OUT/documents/
+fi
