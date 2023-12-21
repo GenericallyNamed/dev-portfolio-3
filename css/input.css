@@ -7,15 +7,27 @@
     @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
   }
   h1 {
-    @apply text-5xl font-bold m-1
+    @apply text-4xl font-bold m-1
   }
   h2 {
-    @apply text-4xl
+    @apply text-2xl
   }
   h3 {
-    @apply text-3xl 
+    @apply text-xl 
   }
   h4 {
-    @apply text-2xl
+    @apply text-xl
+  }
+  i {
+    @apply italic
+  }
+  li[item] {
+    @apply list-disc list-inside
+  }
+  a[link] {
+    @apply text-blue underline
+  }
+  li[chiplet] {
+    @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2
   }
 }
