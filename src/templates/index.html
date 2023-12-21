@@ -65,9 +65,9 @@
             {% if coursework %}
             <section>
                 <h2>Coursework</h2>
-                <ul>
+                <ul card-grid>
                     {% for course in coursework %}
-                    <li>
+                    <li yellow-card>
                         <h3>{{ course.title }}</h3>
                         <h4>{{ course.code }}</h4>
                         <p>{{ course.description }}</p>

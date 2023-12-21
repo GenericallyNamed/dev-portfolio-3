@@ -1,5 +1,15 @@
 [
     {
+        "title": "Programming & Intro Data Structures",
+        "code": "EECS 280",
+        "description": "Fundamentals of programming and data structures, in C++.",
+        "skills": [
+            "C++ language skills",
+            "C++ STL basics",
+            "Data Structures"
+        ]
+    },
+    {
         "title": "Data Structures and Algorithms",
         "code": "EECS 281",
         "description": "Fundamentals of data structures and algorithms, in C++.",
