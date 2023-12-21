@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #E0E0E0;
   /* 2 */
 }
 
@@ -375,7 +375,7 @@ textarea {
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #AFAFAF;
   /* 2 */
 }
 
@@ -383,7 +383,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #AFAFAF;
   /* 2 */
 }
 
@@ -542,24 +542,57 @@ video {
 
 h1 {
   margin: 0.25rem;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h3 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 h4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+i {
+  font-style: italic;
+}
+
+li[item] {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+a[link] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 255 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+li[chiplet] {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(100 100 100 / var(--tw-text-opacity));
 }
 
 .mb-1 {
@@ -570,6 +603,32 @@ h4 {
   margin-top: 1rem;
 }
 
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 16 0 / var(--tw-border-opacity));
+}
+
+.bg-\[rgb\(100\2c 30\2c 30\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 30 30 / var(--tw-bg-opacity));
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -577,6 +636,10 @@ h4 {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-blue {

@@ -1,0 +1,15 @@
+[
+    {
+        "company":"Rocket Mortgage",
+        "title":"Machine Learning Intern",
+        "start":"May 2023",
+        "end":"August 2023",
+        "location":"Detroit, MI",
+        "description":"",
+        "skills":[
+            "Python",
+            "Machine Learning",
+            "Data Science"
+        ]
+    }
+]

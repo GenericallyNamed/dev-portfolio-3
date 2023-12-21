@@ -12,6 +12,7 @@ dist/
 build/
 *.egg
 *.whl
+.DS_Store
 
 # React and JavaScript project components
 node_modules/

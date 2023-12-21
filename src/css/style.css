@@ -29,3 +29,20 @@ pre {
     border-radius: 5px;
     padding: 1rem;
 }
+
+.glowing {
+    animation: glow 3s ease-in-out infinite;
+}
+
+/* outline fades in and out, golden solid 2px */
+@keyframes glow {
+    0% {
+        outline: 2px solid rgba(255, 217, 0, 0.33);
+    }
+    50% {
+        outline: 2px solid gold;
+    }
+    100% {
+        outline: 2px solid rgba(255, 217, 0, 0.33);
+    }
+}

@@ -4,8 +4,8 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 from get_data import get_index
-
-TEMPLATES = Path('./src/templates')
+SRC = Path('./src')
+TEMPLATES = Path(SRC / 'templates')
 BUILD = Path('./build')
 print(Path(".").absolute())
 print(TEMPLATES)
@@ -18,6 +18,7 @@ def render_template(template, output, **kwargs):
     with open(output, 'w', encoding='utf-8') as f:
         f.write(template.render(**kwargs))
 
+print("Compiling index.html template")
 
 render_template(TEMPLATES / 'index.html', BUILD /
-                'index.html', context=get_index())
+                'index.html', **get_index())

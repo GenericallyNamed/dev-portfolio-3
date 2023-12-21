@@ -3,28 +3,21 @@
         "name":"Pathing Algorithms Visualizer",
         "description":"Using JavaScript, I wrote a simple application to visualize different pathfinding algorithms and how they step through a grid to find optimal paths between points. I also implemented a simple maze generation algorithm.",
         "link":"https://pathstar.shandilis.dev",
-        "repo":"TODO"
+        "repo":"https://github.com/GenericallyNamed/path_star"
     },
     {
         "name":"Restful Discord Bot",
         "description":"With MongoDB and Node.js, I helped writing functionality for a Discord bot that let players gamble competitively with virtual fake points. Only slightly unethical, mainly just fun and learning about RESTful APIs.",
-        "repo":"TODO"
+        "repo":"https://github.com/rramboer/A-Bot"
     },
     {
         "name":"Portfolio Optimizer",
-        "description":"As a participant in the MHacks 16 hackathon, I wrote the React frontend and Flask backend for a web application that could optimize user's stock portfolios using existing stock market data.",
-        "repo":"TODO"
+        "description":"As a participant in the MHacks 16 hackathon, I wrote the React frontend and Flask backend for a web application that could optimize user's stock portfolios using existing stock market data."
     },
     {
         "name":"Personal Site",
         "description":"My portfolio consists of static HTML built from Jinja Templates + Tailwind for CSS, and deployed on GitHub pages.",
-        "repo":"TODO",
+        "repo":"https://github.com/GenericallyNamed/genericallynamed.github.io",
         "link":"/"
-    },
-    {
-        "name":"Asteroids",
-        "description":"A simple take on a classic game, with game logic written in C++-compiled-to-WebAssembly and rendered on an HTML5 canvas.",
-        "repo":"TODO",
-        "link":"https://asteroids.shandilis.dev"
     }
 ]

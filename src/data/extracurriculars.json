@@ -1,0 +1,44 @@
+[
+    {
+        "organization":"Michigan Data Science Team",
+        "link":"https://mdst.club/",
+        "title":"Project Organizer",
+        "start":"August 2023",
+        "end":"December 2023",
+        "description":"Using classifier models and machine learning to predict cybersecurity threats on simulated computer networks.",
+        "skills":[
+            "Python",
+            "SciKit-Learn",
+            "Pandas"
+        ]
+    },
+    {
+        "organization":"Michigan Data Science Team",
+        "link":"https://mdst.club/",
+        "title":"Project Organizer",
+        "start":"August 2022",
+        "end":"December 2022",
+        "description":"Using machine learning models to translate between languages and building a basic Google Translate clone using Flask.",
+        "skills":[
+            "Python",
+            "Flask",
+            "Git",
+            "Transformers & Seq2Seq Models",
+            "Pandas"
+        ]
+    },
+    {
+        "organization":"Michigan Solar Car Team",
+        "link":"https://solarcar.engin.umich.edu/",
+        "title":"QA Software Developer",
+        "start":"January 2023",
+        "end":"March 2023",
+        "description":"Made UI improvements to the team's telemetry software used for monitoring the vehicle during races.",
+        "skills":[
+            "Java",
+            "JavaFX",
+            "Git"
+        ]
+    }
+
+]

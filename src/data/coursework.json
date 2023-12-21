@@ -1,0 +1,85 @@
+[
+    {
+        "title": "Data Structures and Algorithms",
+        "code": "EECS 281",
+        "description": "Fundamentals of data structures and algorithms, in C++.",
+        "skills": [
+            "C++ language skills",
+            "C++ STL",
+            "Data Structures",
+            "Algorithms",
+            "Program Optimization"
+        ],
+        "verbose": {
+            "skills": [
+                "C++ language skills used to develop several projects focused on data structures and algorithms.",
+                "Data Structures including linked lists, trees, heaps, hash tables, and graphs.",
+                "Algorithms including sorting, searching, and graph traversal.",
+                "Focus on program optimization and testing using shell tools including valgrind and perf."
+            ]
+        }
+    },
+    {
+        "title": "Intro to Computer Organization",
+        "code": "EECS 370",
+        "description": "Processor design, assembly, memory, and cache.",
+        "skills": [
+            "C language skills",
+            "ARM assembly",
+            "Processor design",
+            "Memory and Cache design"
+        ],
+        "verbose": {
+            "skills": [
+                "C programming skills used to develop several projects focused on simulating a processor, memory, and cache.",
+                "ARM Assembly skills with a focus on fundamentals of assembly programs, including memory access, branching, and function calls.",
+                "Processor design and optimization skills, including pipelining, branch prediction, and cache design."
+            ]
+        }
+    },
+    {
+        "title": "Web Systems",
+        "code": "EECS 485",
+        "description": "Covers fundamentals of web development and web systems design.",
+        "skills": [
+            "HTML/CSS + Jinja2 templating",
+            "JavaScript",
+            "React",
+            "Python",
+            "SQL (SQLite)"
+        ],
+        "verbose": {
+            "skills": [
+                "HTML/CSS",
+                "Templated pages with Jinja2",
+                "Python",
+                "Used multithreading in Python to handle multiple simultaneous tasks at once.",
+                "Developed and simulated distributed systems including a distributed compute design similar to MapReduce and a search index.",
+                "SQL (SQLite) used as a database for an instagram clone, storing user data, posts, and comments.",
+                "Sockets and Networking in Python to communicate with nodes in distributed systems."
+            ]
+        }
+    },
+    {
+        "title": "Intro to Cybersecurity",
+        "code": "EECS 388",
+        "description": "Covers fundamentals of cybersecurity, including cryptography, network security, and software security.",
+        "skills": [
+            "Cryptography Applications",
+            "Network Security",
+            "Software Security",
+            "Python",
+            "C",
+            "x86 Assembly"
+        ],
+        "verbose": {
+            "skills": [
+                "Cryptography skills focusing on symmetric and asymmetric encryption, as well as hashing.",
+                "Network Security skills focusing on attacks such as ARP spoofing, DNS spoofing, and TCP hijacking.",
+                "Software Security skills focusing on program vulnerabilities involving data injection and execution.",
+                "Python language skills used for automating attacks and using socket programming to communicate with external systems.",
+                "C and x86 assembly analysis and exploitation, including buffer overflows, format string vulnerabilities, and return-oriented programming."
+            ]
+        }
+    }
+]
