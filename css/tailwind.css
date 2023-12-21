@@ -599,6 +599,29 @@ li[chiplet] {
   color: rgb(100 100 100 / var(--tw-text-opacity));
 }
 
+ul[card-grid] {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  ul[card-grid] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+li[yellow-card] {
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 185 48 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 89 55 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }

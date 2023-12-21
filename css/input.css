@@ -30,4 +30,10 @@
   li[chiplet] {
     @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2
   }
+  ul[card-grid] {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4
+  }
+  li[yellow-card] {
+    @apply bg-darkYellow-600 border-yellow-800 border-[2px] border-solid rounded-lg p-6
+  }
 }
