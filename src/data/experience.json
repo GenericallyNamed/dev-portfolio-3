@@ -7,9 +7,10 @@
         "location":"Detroit, MI",
         "description":"",
         "skills":[
-            "Python",
-            "Machine Learning",
-            "Data Science"
+            "Designed a semantic search engine with a vector database, implemented using PostgreSQL with the PGVector extension for vectors and Flask as the primary web framework for API and webapp. Deployed on AWS EC2.",
+            "Developed a webscraper in Go to collect 2,000+ articles to make searchable in the engine.",
+            "Experimented with several embedding models as well as used generative LLMs to support chat-based search.",
+            "Developed skills in using Node.js and Flask for running/building web services as well as creating automations."
         ]
     }
 ]
