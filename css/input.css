@@ -36,4 +36,7 @@
   li[yellow-card] {
     @apply bg-darkYellow-600 border-yellow-800 border-[2px] border-solid rounded-lg p-6
   }
+  ol li p {
+    @apply inline-block pl-[24px]
+  }
 }
