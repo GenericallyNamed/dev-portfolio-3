@@ -53,6 +53,10 @@
                         <a href="mailto:amshand@umich.edu">📧 amshand [at] umich [dot] edu</a>
                     </li>
                     <li chiplet>
+                        <a href="https://github.com/genericallynamed">
+                            🐙 my github!
+                    </li>
+                    <li chiplet>
                         <a href="https://www.linkedin.com/in/alexshandilis/">
                             🔌 linkedin.com/in/alexshandilis
                         </a>
@@ -93,11 +97,15 @@
                         <h4><i>{{ job.company }}</i></h4>
                         <p>{{ job.description }}</p>
                         {% if job.skills %}
-                        <ul>
+                        <ol>
                             {% for skill in job.skills %}
-                            <li item>{{ skill }}</li>
+                            <li item>
+                                <p>
+                                    {{ skill }}
+                                </p>
+                            </li>
                             {% endfor %}
-                        </ul>
+                        </ol>
                         {% endif %}
                     </li>
                     {% endfor %}
