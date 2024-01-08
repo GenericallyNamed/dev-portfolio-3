@@ -1,7 +1,7 @@
 [
     {
         "name":"Space Rocks (Asteroids clone)",
-        "description":"Clone of the classic \"Asteroids\" arcade game, written in C++ compiled to WebAssembly with the Emscripten compiler. Using HTML5 canvas API for rendering."
+        "description":"Clone of the classic \"Asteroids\" arcade game, written in C++ compiled to WebAssembly with the Emscripten compiler. Using HTML5 canvas API for rendering.",
         "link":"https://space-rocks.shandilis.dev",
         "repo":"https://github.com/GenericallyNamed/space-rocks"
     },
