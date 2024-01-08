@@ -1,5 +1,9 @@
 [
     {
+        "name":"Space Rocks (Asteroids clone)",
+        "description":"Clone of the classic \"Asteroids\" arcade game, written in C++ compiled to WebAssembly with the Emscripten compiler. Using HTML5 canvas API for rendering."
+    },
+    {
         "name":"Pathing Algorithms Visualizer",
         "description":"Using JavaScript, I wrote a simple application to visualize different pathfinding algorithms and how they step through a grid to find optimal paths between points. I also implemented a simple maze generation algorithm.",
         "link":"https://pathstar.shandilis.dev",
