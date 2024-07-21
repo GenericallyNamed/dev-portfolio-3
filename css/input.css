@@ -7,36 +7,36 @@
     @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
   }
   h1 {
-    @apply text-4xl font-bold m-1
+    @apply text-4xl font-bold m-1;
   }
   h2 {
-    @apply text-2xl
+    @apply text-2xl;
   }
   h3 {
-    @apply text-xl 
+    @apply text-xl;
   }
   h4 {
-    @apply text-xl
+    @apply text-xl;
   }
   i {
-    @apply italic
+    @apply italic;
   }
   li[item] {
-    @apply list-disc list-inside
+    @apply list-disc list-outside ml-4;
   }
   a[link] {
-    @apply text-blue underline
+    @apply text-blue underline;
   }
   li[chiplet] {
-    @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2
+    @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
   }
   ul[card-grid] {
-    @apply grid grid-cols-1 sm:grid-cols-2 gap-4
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
   }
   li[yellow-card] {
-    @apply bg-darkYellow-600 border-yellow-800 border-[2px] border-solid rounded-lg p-6
+    @apply bg-darkYellow-600 border-yellow-800 border-[2px] border-solid rounded-lg p-6;
   }
   ol li p {
-    @apply inline-block pl-[24px]
+    @apply inline-block pl-[24px];
   }
 }
